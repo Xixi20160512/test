@@ -1,5 +1,11 @@
 ---
 title: {{ title }}
 date: {{ date }}
-tags:
+tags: 
+categories: art
 ---
+***摘要***
+
+<!-- more -->
+
+now begin

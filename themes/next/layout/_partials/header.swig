@@ -15,11 +15,7 @@
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
-    {% if theme.seo %}
-      <h1 class="site-subtitle" itemprop="description">{{ config.subtitle }}</h1>
-    {% else %}
-      <p class="site-subtitle">{{ config.subtitle }}</p>
-    {% endif %}
+  <p class="site-subtitle">{{ config.subtitle }}</p>
 </div>
 
 <div class="site-nav-toggle">
@@ -31,7 +27,7 @@
 </div>
 
 <nav class="site-nav">
-  {% set hasSearch = theme.swiftype_key || theme.algolia_search.enable || theme.tinysou_Key || config.search %}
+  {% set hasSearch = theme.swiftype_key || theme.tinysou_Key || config.search %}
 
   {% if theme.menu %}
     <ul id="menu" class="menu">
@@ -71,4 +67,3 @@
   {% endif %}
 </nav>
 
-{% include '../_custom/header.swig' %}

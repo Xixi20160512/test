@@ -3,12 +3,14 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 不会飞的猪
+title: 爱思考，爱生活，爱前端
 subtitle:
-description:
+description: 人的一切痛苦，本质上都是对自己无能的愤怒。
 author: Ruan_XH
-language: CN
-timezone: 
+language: zh-Hans
+timezone:
+  #设置头像
+avatar: /uploads/头像.png
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -28,7 +30,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :year-:month-:day-:title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
@@ -44,7 +46,7 @@ highlight:
   tab_replace:
 
 # Category & Tag
-default_category: uncategorized
+default_category: art
 category_map:
 tag_map:
 
@@ -64,11 +66,15 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
-
+duoshuo_shortname: xixi20160512
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy: 
+deploy:
   type: git
-  repo: git@git.coding.net:xixi20160512/xixi20160512.git
+  repository: git@git.coding.net:xixi20160512/xixi20160512.git
   branch: master
-  message: Hexo Deploy
+
+# 搜索
+search:
+  path: search.xml
+  field: post
